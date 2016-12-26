@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Paginas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>User</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @paginas.each do |pagina| %>
+      <tr>
+        <td><%= pagina.name %></td>
+        <td><%= pagina.user.email %></td>
+        <td><%= link_to 'Mostrar', pagina %></td>
+        <td><%= link_to 'Editar', edit_pagina_path(pagina) %></td>
+        <td><%= link_to 'Apagar', pagina, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Nova Página', new_pagina_path %>

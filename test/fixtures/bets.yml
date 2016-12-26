@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  pagina: one
+  time1: 1
+  time2: 1
+  valor: 9.99
+
+two:
+  user: two
+  pagina: two
+  time1: 1
+  time2: 1
+  valor: 9.99
